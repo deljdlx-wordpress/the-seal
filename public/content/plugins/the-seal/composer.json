@@ -15,9 +15,9 @@
         "psr-4" : {
             "TheSeal\\" : "./class"
         },
-		"files": [
+        "files": [
             "./vendor-the-seal/jdlxt/easy-plugin/source/autoload.php"
-		]
+        ]
     },
     "config": {
         "vendor-dir": "vendor-the-seal"
