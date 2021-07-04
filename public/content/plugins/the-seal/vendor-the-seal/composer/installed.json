@@ -1,0 +1,37 @@
+{
+    "packages": [
+        {
+            "name": "jdlxt/easy-plugin",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/deljdlx-wordpress/easy-plugin.git",
+                "reference": "316de36143c390d2e8dc8c2f5552830521e23413"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/deljdlx-wordpress/easy-plugin/zipball/316de36143c390d2e8dc8c2f5552830521e23413",
+                "reference": "316de36143c390d2e8dc8c2f5552830521e23413",
+                "shasum": ""
+            },
+            "time": "2021-07-03T10:21:55+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "source",
+            "authors": [
+                {
+                    "name": "Julien Delsescaux",
+                    "email": "none@mail.com"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/deljdlx-wordpress/easy-plugin/tree/master",
+                "issues": "https://github.com/deljdlx-wordpress/easy-plugin/issues"
+            },
+            "install-path": "../jdlxt/easy-plugin"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

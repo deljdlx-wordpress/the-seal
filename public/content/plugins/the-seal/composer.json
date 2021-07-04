@@ -1,0 +1,25 @@
+{
+
+    "repositories":[
+        {
+            "type": "vcs",
+            "url": "git@github.com:deljdlx-wordpress/easy-plugin.git"
+        }
+    ],
+
+    "require": {
+        "jdlxt/easy-plugin": "dev-master"
+    },
+
+    "autoload": {
+        "psr-4" : {
+            "TheSeal\\" : "./class"
+        },
+		"files": [
+            "./vendor-the-seal/jdlxt/easy-plugin/source/autoload.php"
+		]
+    },
+    "config": {
+        "vendor-dir": "vendor-the-seal"
+    }
+}
