@@ -19,7 +19,7 @@ wp-config.php
 
 /public/content/themes/*
 !/public/content/themes
-#!/content/themes/custom_theme
+!/public/content/themes/the-seal
 
 /public/content/plugins/*
 !/public/content/plugins

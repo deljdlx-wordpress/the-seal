@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  width: 100vw;
+  height: 100vh;
+}
+
+/*==========================================================*/
+
+:root {
+  --the-seal-gearSize: 60px;
+  --the-seal-oscillation-range: 20deg;
+  --the-seal-oscillation-speed: 5s;
+  --the-seal-textColor: #fff;
+  --the-seal-borderColor: #fff;
+  --the-seal-font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.the-seal {
+  box-sizing: border-box;
+  position: absolute;
+  transform: rotateZ(0deg);
+  transition: all 2s;
+}
+
+.the-seal * {
+  box-sizing: border-box;
+  position: absolute;
+  display: block;
+}
+
+/*
+.the-seal:hover {
+  transform: rotateY(180deg)
+}
+*/
+
+.the-seal-sunburn {
+  animation: the-seal-sunburn 5s linear infinite;
+}
+
+
+.the-seal .crown {
+  transform-origin: calc(50%) calc(50%);
+}
+
+.the-seal__gear {
+  box-shadow: 0px 0px 10px #000;
+  border: solid var(--the-seal-gearBorder) var(--the-seal-borderColor);
+}
+
+
+
+.the-seal .background {
+  z-index: 10;
+  
+  border-style: solid;
+  border-radius: 50%;
+  background-color: #fff;
+  border-color: var(--the-seal-borderColor);
+
+  background-size: cover;
+  background-position: 50% 50%;
+
+  transform: rotate(calc(var(--the-seal-oscillation-range) * -1));
+  transform-origin: calc(50%) calc(50%);
+}
+
+.the-seal .letter {
+  z-index: 20;
+  font-family: var(--the-seal-font-family);
+  font-weight: bold;
+
+  color: var(--the-seal-textColor);
+
+  width: var(--the-seal-gearSize);
+  height: var(--the-seal-gearSize);
+  line-height: var(--the-seal-gearSize);
+  text-align: center;
+
+}
+
+
+@keyframes the-seal-rotating {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes the-seal-oscillate {
+  0% {
+    transform: rotate(calc(var(--the-seal-oscillation-range) * -1));
+  }
+
+  50% {
+    transform: rotate(calc(var(--the-seal-oscillation-range) / 2));
+  }
+
+  100% {
+    transform: rotate(calc(var(--the-seal-oscillation-range) * -1));
+  }
+}
+
+
+@keyframes the-seal-sunburn {
+  0% {
+    filter: hue-rotate(0);
+  }
+
+  50% {
+    filter: hue-rotate(90deg);
+  }
+
+  100% {
+    filter: hue-rotate(0);
+  }
+}
